@@ -30,7 +30,7 @@
         <h1>Finding Futures</h1>
         <p>Great design and experience does not make itself, it takes determination and love.</p>
         <div class="button">
-          <a href="#specialities">Take a look</a>
+          <a href="#" onclick="goToSpecialities();">Take a look</a>
         </div>
       </div>
     </section>
@@ -168,6 +168,12 @@
         }
       });
     });
+
+    function goToSpecialities() {
+      $('html, body').animate({
+        scrollTop: $("#specialities").offset().top - 150
+      }, 1200);
+    }
     </script>
 
   </body>
