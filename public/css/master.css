@@ -97,6 +97,35 @@
         position: absolute;
         left: 0;
         bottom: .4rem; }
+  .footer--right h3 {
+    margin: 0;
+    margin-bottom: 1rem; }
+  .footer--right input {
+    border: solid 0.5px #a2d565;
+    border-radius: 3px;
+    padding-left: .5rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    height: 1.6rem; }
+  .footer--right textarea {
+    border: solid 0.5px #a2d565;
+    border-radius: 3px;
+    padding-left: .5rem;
+    width: 100%;
+    resize: vertical; }
+  .footer--right button {
+    background: #FF3687;
+    border-radius: 7px;
+    border: none;
+    padding: .6rem 1.2rem;
+    text-decoration: none;
+    color: #FFF;
+    transform: scale(1);
+    transition: transform 300ms ease;
+    cursor: pointer; }
+    .footer--right button:hover {
+      transition: transform 300ms ease;
+      transform: scale(1.05); }
 
 body {
   margin: 0;

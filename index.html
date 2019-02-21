@@ -135,17 +135,13 @@
         </ul>
       </div>
 
-      <div class="footer--right">
-        <ul class="footer--list">
-          <li class="footer--list--title">Other Links</li>
-          <li><a href="#">Management</a></li>
-          <li><a href="#">Tobias Barsnes</a></li>
-          <li><a href="#">Endre Stedje</a></li>
-          <li><a href="#">Management</a></li>
-          <li><a href="#">Tobias Barsnes</a></li>
-          <li><a href="#">Endre Stedje</a></li>
-        </ul>
-      </div>
+      <form class="footer--right" name="contact" method="POST" data-netlify="true">
+        <h3 class="footer--list--title">Contact Us</h3>
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="email" name="email" placeholder="yourname@example.com">
+        <textarea name="body" rows="8" cols="80" placeholder="Please type a detailed message..."></textarea>
+        <button type="submit" class="footer--submit">Submit</button>
+      </form>
     </section>
 
     <script>
