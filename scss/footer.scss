@@ -20,10 +20,6 @@
     }
   }
 
-  &--right {
-
-  }
-
   &--list {
     list-style: none;
     padding: 0;
@@ -64,6 +60,8 @@
     & h3 {
       margin: 0;
       margin-bottom: 1rem;
+      font-family: 'Noto Sans';
+      font-weight: 400;
     }
 
     & input {

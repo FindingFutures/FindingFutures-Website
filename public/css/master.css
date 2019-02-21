@@ -99,7 +99,9 @@
         bottom: .4rem; }
   .footer--right h3 {
     margin: 0;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    font-family: 'Noto Sans';
+    font-weight: 400; }
   .footer--right input {
     border: solid 0.5px #a2d565;
     border-radius: 3px;
