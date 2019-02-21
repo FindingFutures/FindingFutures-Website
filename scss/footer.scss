@@ -30,10 +30,23 @@
       text-decoration: none;
       transition: padding-left 150ms ease;
 
+      & i {
+        opacity: 0;
+        color: $blue;
+        padding-right: 0;
+        transition: padding-right 150ms ease;
+        width: 0;
+      }
+
       &:hover {
         color: $blue;
-        padding-left: .5rem;
-        transition: padding-left 150ms ease;
+
+        & i {
+          opacity: 1;
+          display: inline-block;
+          padding-right: .6rem;
+          transition: padding-right 150ms ease;
+        }
       }
     }
 
@@ -71,6 +84,10 @@
       width: 100%;
       margin-bottom: .5rem;
       height: 1.6rem;
+
+      &:focus {
+        outline: none;
+      }
     }
 
     & textarea {
@@ -79,6 +96,10 @@
       padding-left: .5rem;
       width: 100%;
       resize: vertical;
+
+      &:focus {
+        outline: none;
+      }
     }
 
     & button {

@@ -80,10 +80,19 @@
       color: #FFF;
       text-decoration: none;
       transition: padding-left 150ms ease; }
-      .footer--list a:hover {
+      .footer--list a i {
+        opacity: 0;
         color: #00BBFF;
-        padding-left: .5rem;
-        transition: padding-left 150ms ease; }
+        padding-right: 0;
+        transition: padding-right 150ms ease;
+        width: 0; }
+      .footer--list a:hover {
+        color: #00BBFF; }
+        .footer--list a:hover i {
+          opacity: 1;
+          display: inline-block;
+          padding-right: .6rem;
+          transition: padding-right 150ms ease; }
     .footer--list--title {
       color: #a2d565;
       padding-bottom: .5rem;
@@ -109,12 +118,16 @@
     width: 100%;
     margin-bottom: .5rem;
     height: 1.6rem; }
+    .footer--right input:focus {
+      outline: none; }
   .footer--right textarea {
     border: solid 0.5px #a2d565;
     border-radius: 3px;
     padding-left: .5rem;
     width: 100%;
     resize: vertical; }
+    .footer--right textarea:focus {
+      outline: none; }
   .footer--right button {
     background: #FF3687;
     border-radius: 7px;
