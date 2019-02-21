@@ -42,7 +42,7 @@
             width: 100%;
             bottom: -6px;
             left: 0;
-            transform-origin: center;
+            transform-origin: middle center;
             transform: scale(0);
             transition: transform 300ms ease; }
           .navbar--menu ul li a:hover {
@@ -63,14 +63,14 @@
   position: relative;
   z-index: -100;
   display: grid;
-  grid-template-columns: 3rem repeat(3, 1fr) 3rem;
+  grid-template-columns: 3rem 2fr 1fr 2fr 3rem;
   grid-gap: 2rem;
   color: #FFF; }
   .footer--left {
     grid-column: 2 / 3;
     display: grid; }
     .footer--left svg {
-      width: 40%;
+      width: 70%;
       margin: 0 auto auto 0; }
   .footer--list {
     list-style: none;
@@ -287,7 +287,7 @@ body {
         font-size: .8rem; }
 
 .portfolio {
-  height: 80rem;
+  height: auto;
   background: linear-gradient(to left bottom, #00bbff, #00a5ff, #008dff, #0071ff, #004dff);
   clip-path: polygon(0 100%, 0 8rem, 100% 0, 100% 100%);
   clip-path: polygon(0 8rem, 100% 0, 100% calc(100% - 8rem), 0 100%);
@@ -358,7 +358,8 @@ body {
 
 .offers {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 8rem; }
   .offers--list {
     display: grid;
     text-align: center; }

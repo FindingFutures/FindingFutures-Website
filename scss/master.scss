@@ -200,7 +200,7 @@ body {
 }
 
 .portfolio {
-  height: 80rem;
+  height: auto;
   background: $blue-gradient;
   clip-path: polygon(0 100%, 0 8rem, 100% 0, 100% 100%);
   clip-path: polygon(0 8rem, 100% 0, 100% calc(100% - 8rem), 0 100%);
@@ -293,6 +293,7 @@ body {
 .offers {
   width: 100%;
   margin: auto;
+  margin-bottom: 8rem;
 
   &--list {
     display: grid;
