@@ -248,28 +248,29 @@ body {
         left: 0;
         bottom: 0;
         background: $green-gradient-trans;
-        display: grid;
+        display: flex;
         opacity: 0;
         transition: opacity 300ms ease;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
 
         & h3 {
           color: #FFF;
           font-family: $title-font;
           text-shadow: $text-shadow;
           text-align: center;
-          font-size: 3.3rem;
-          width: 100%;
-          margin-bottom: 0;
-          margin-top: 5rem;
+          font-size: 2.5rem;
+          margin: 0;
         }
 
         & a {
           background: $red;
           border-radius: $border-radius;
-          padding: .4rem 2rem;
+          padding: .2rem 1rem;
+          font-size: .7rem;
           text-decoration: none;
-          margin: auto;
-          margin-bottom: 5rem;
+          margin: 0;
           color: #FFF;
           box-shadow: $box-shadow;
           transition: all 300ms ease;

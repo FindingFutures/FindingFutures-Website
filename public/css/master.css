@@ -326,25 +326,26 @@ body {
         left: 0;
         bottom: 0;
         background: linear-gradient(to right top, #a2d56590, #a3db5890, #a4e04890, #a6e63490, #a8eb1290);
-        display: grid;
+        display: flex;
         opacity: 0;
-        transition: opacity 300ms ease; }
+        transition: opacity 300ms ease;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column; }
         .portfolio--content--card--desc h3 {
           color: #FFF;
           font-family: "Staatliches";
           text-shadow: 0 2px 8px #00000020;
           text-align: center;
-          font-size: 3.3rem;
-          width: 100%;
-          margin-bottom: 0;
-          margin-top: 5rem; }
+          font-size: 2.5rem;
+          margin: 0; }
         .portfolio--content--card--desc a {
           background: #FF3687;
           border-radius: 7px;
-          padding: .4rem 2rem;
+          padding: .2rem 1rem;
+          font-size: .7rem;
           text-decoration: none;
-          margin: auto;
-          margin-bottom: 5rem;
+          margin: 0;
           color: #FFF;
           box-shadow: 0 2px 4px #00000020;
           transition: all 300ms ease; }
