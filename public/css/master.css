@@ -54,6 +54,8 @@
     background-color: #a2d565;
     width: 100%;
     grid-column: 1 / 7; }
+  .navbar span {
+    display: none; }
 
 .footer {
   background-color: #232323;
@@ -404,6 +406,29 @@ body {
           margin-right: .5rem; }
 
 @media (max-width: 650px) {
+  .navbar {
+    position: relative; }
+    .navbar ul {
+      position: absolute;
+      top: -250px;
+      z-index: -10;
+      background-color: #FFF;
+      width: 100%;
+      transform-origin: top;
+      box-shadow: 0 2px 4px #00000020;
+      transition: top 500ms ease; }
+      .navbar ul li {
+        display: block;
+        text-align: center;
+        padding: 1rem 0; }
+    .navbar span {
+      display: block;
+      margin: auto;
+      margin-right: 0;
+      font-size: 2rem; }
+      .navbar span a {
+        color: #000;
+        text-decoration: none; }
   .hero {
     padding-top: 3rem;
     padding-bottom: 3rem; }

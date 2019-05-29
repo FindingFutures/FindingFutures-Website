@@ -17,14 +17,27 @@
     <section class="navbar" id="navbar">
       <a href="/" class="navbar--image"><img src="public/assets/logo__black.png" alt=""></a>
       <div class="navbar--menu">
-        <ul>
+        <ul id="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <span><a id='hamburger' onclick='showMenu()'>&#9776;</a></span>
       </div>
     </section>
+    <script type="text/javascript">
+      function showMenu() {
+        let menu = document.getElementById('menu');
+        menu.style.top = '100px'
+        document.getElementById('hamburger').setAttribute('onclick', 'hideMenu()')
+      }
+      function hideMenu() {
+        let menu = document.getElementById('menu');
+        menu.style.top = '-250px'
+        document.getElementById('hamburger').setAttribute('onclick', 'showMenu()')
+      }
+    </script>
     <section class="hero">
       <div class="hero--content">
         <h1>Finding Futures</h1>

@@ -1,5 +1,39 @@
 @media(max-width: 650px){
 
+  .navbar {
+    position: relative;
+
+    ul {
+      position: absolute;
+      top: -250px;
+      z-index: -10;
+      background-color: #FFF;
+      width: 100%;
+      transform-origin: top;
+      box-shadow: $box-shadow;
+      transition: top 500ms ease;
+
+      li {
+        display: block;
+        text-align: center;
+        padding: 1rem 0;
+      }
+    }
+
+    span {
+      display: block;
+      margin: auto;
+      margin-right: 0;
+      font-size: 2rem;
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+  }
+
   .hero {
     padding-top: 3rem;
     padding-bottom: 3rem;
