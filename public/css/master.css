@@ -407,7 +407,8 @@ body {
 
 @media (max-width: 650px) {
   .navbar {
-    position: relative; }
+    position: relative;
+    z-index: 100; }
     .navbar ul {
       position: absolute;
       top: -250px;
