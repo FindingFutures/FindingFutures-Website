@@ -452,29 +452,34 @@ body {
         font-size: .9rem; }
       .portfolio--content--card .portfolio--content--card--desc {
         opacity: 100; }
-  .offers--list {
-    grid-template-rows: 10rem auto; }
-    .offers--list--title {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      margin-left: 0; }
-      .offers--list--title span {
-        display: block; }
-    .offers--list ul {
-      width: 100%;
-      margin-left: 0; }
-      .offers--list ul li {
+  .offers {
+    width: 75%; }
+    .offers--list {
+      grid-template-rows: 10rem auto; }
+      .offers--list--title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-left: 0; }
+        .offers--list--title span {
+          display: block; }
+      .offers--list ul {
+        width: 100%;
+        margin-left: 0;
         display: block;
-        margin: auto auto auto 1rem; }
-        .offers--list ul li i {
-          background-color: #a2d565;
-          border-radius: 50%;
-          padding: .5rem;
-          width: 1rem;
-          height: 1rem;
-          color: #FFF;
-          text-align: center;
-          margin-right: .5rem; }
+        text-align: left; }
+        .offers--list ul li {
+          display: block;
+          margin: auto auto auto 1rem;
+          padding: 1rem 0; }
+          .offers--list ul li i {
+            background-color: #a2d565;
+            border-radius: 50%;
+            padding: .5rem;
+            width: 1rem;
+            height: 1rem;
+            color: #FFF;
+            text-align: center;
+            margin-right: .5rem; }
   .footer {
     background-color: #232323;
     margin-top: -8rem;

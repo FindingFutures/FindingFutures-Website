@@ -101,6 +101,8 @@
   }
 
   .offers {
+    width: 75%;
+
     &--list {
       grid-template-rows: 10rem auto;
 
@@ -117,10 +119,13 @@
       & ul {
         width: 100%;
         margin-left: 0;
+        display: block;
+        text-align: left;
 
        & li {
          display: block;
          margin: auto auto auto 1rem;
+         padding: 1rem 0;
 
          & i {
            background-color: $green;
